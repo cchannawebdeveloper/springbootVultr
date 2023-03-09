@@ -13,7 +13,6 @@ public class BcryptToolController {
 	
 	@GetMapping("/bcrypt_gnerate")
 	public ResultMessage getBcryptCode() {
-		
 		return new ResultMessage("Sucessfully!", "200", "Request Succesfully");
 	}
 
