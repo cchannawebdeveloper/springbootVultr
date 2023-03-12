@@ -1,7 +1,9 @@
 package com.spring.boot.vultr.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.spring.boot.vultr.model.ResultMessage;
@@ -10,8 +12,8 @@ import com.spring.boot.vultr.model.ResultMessage;
 @RequestMapping("/api/v1")
 public class BcryptToolController {
 	
-	
-	@GetMapping("/bcrypt_gnerate")
+	@CrossOrigin(origins = "http://143.198.172.49")
+	@RequestMapping(value = "/bcrypt_gnerate", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResultMessage getBcryptCode() {
 		return new ResultMessage("Sucessfully!", "200", "Request Succesfully");
 	}
