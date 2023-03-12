@@ -21,10 +21,16 @@
 		jQuery.ajax({
 			
 			//	url: "https://catfact.ninja/fact",
+			type: 'GET',
 			url: "http://143.198.172.49:8080/api/v1/bcrypt_gnerate",
-			contentType: "application/json; charset=utf-8",
+			//contentType: "application/json; charset=utf-8",
+			 mode: 'same-origin',
+		      headers: {
+		        'Accept': 'application/json',
+		        'Content-Type': 'application/json'
+		      },
 			//url: "http://localhost:8080/api/v1/bcrypt_gnerate",  
-			type: 'GET',  
+			  
 			  success: function(data) { 
 				  console.log("data=====",  data); 
 			   // $("#para").html(data);                
