@@ -21,7 +21,7 @@
 		jQuery.ajax({
 			
 			//	url: "https://catfact.ninja/fact",
-			url: "http://143.198.172.49/api/v1/bcrypt_gnerate",
+			url: "http://143.198.172.49:8080/api/v1/bcrypt_gnerate",
 			contentType: "application/json; charset=utf-8",
 			//url: "http://localhost:8080/api/v1/bcrypt_gnerate",  
 			type: 'GET',  
