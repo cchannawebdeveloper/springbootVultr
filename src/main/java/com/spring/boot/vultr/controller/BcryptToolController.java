@@ -12,7 +12,9 @@ import com.spring.boot.vultr.model.ResultMessage;
 @RequestMapping("/api/v1")
 public class BcryptToolController {
 	
+	//@CrossOrigin(origins = "http://localhost:8080")
 	@CrossOrigin(origins = "http://143.198.172.49")
+	//@GetMapping("/bcrypt_gnerate")
 	@RequestMapping(value = "/bcrypt_gnerate", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResultMessage getBcryptCode() {
 		return new ResultMessage("Sucessfully!", "200", "Request Succesfully");

@@ -80,10 +80,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<!-- <configuration>
-			        <mainClass>com.marand.thinkmed.meds.config.boot.MedsConfigApplication</mainClass>
-			        <finalName>${project.build.finalName}-${maven.build.timestamp}</finalName>
-			    </configuration> -->
 			</plugin>
 		</plugins>
 	</build>

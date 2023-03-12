@@ -30,34 +30,6 @@
 			  }  
 			});  
 	});
-
-
-
-
-	loadContries = function() {
-		//url = "http://143.198.172.49/api/v1/bcrypt_gnerate";
-		url = "http://localhost:8080/api/v1/bcrypt_gnerate";
-		$.get(url, function(responseJSON) {
-			//dropDownCountries.empty();
-			
-			$.each(responseJSON, function(index, country) {
-				console.log("index====", index);
-				console.log("country====", country);
-				//optionValue = country.id + "-" + country.code;
-				
-				//$("<option>").val(optionValue).text(country.name).appendTo(dropDownCountries);
-			});
-		}).done(function() {
-			alert("Done");
-			//buttonLoad.val("Refresh Countries List");
-			//showToastMessage("All countries have been loaded");
-			//$("#dropDownCountries option[value='16-LA']").attr("selected", "selected");
-			
-		}).fail(function() {
-			alert("Fail");
-			//showToastMessage("Error: Could not connect to server or server encounered an error");
-		});
-	}
 </script>
 
 </body>
