@@ -2,7 +2,6 @@ package com.spring.boot.vultr.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 
@@ -14,6 +13,7 @@ public class WebConfig implements WebMvcConfigurer {
 	        registry.addMapping("/**")
 	        .allowedMethods("*")
 	        .allowedOrigins("http://143.198.172.49:8080")
+	       // .allowedOrigins("http://localhost:8083")
 	        .allowedHeaders("*")
 	        .allowCredentials(false)
 	        .maxAge(-1); 

@@ -4,6 +4,7 @@ public class ResultMessage {
 	private String status;
 	private String code;
 	private String message;
+	private String userInput;
 	
 	public ResultMessage() {
 		// TODO Auto-generated constructor stub
@@ -42,6 +43,11 @@ public class ResultMessage {
 
 	public void setMessage(String message) {
 		this.message = message;
+	}
+
+	@Override
+	public String toString() {
+		return "ResultMessage [status=" + status + ", code=" + code + ", message=" + message + "]";
 	}
 	
 	

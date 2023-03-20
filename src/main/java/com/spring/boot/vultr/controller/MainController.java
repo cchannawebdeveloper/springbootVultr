@@ -8,7 +8,7 @@ public class MainController {
 	
 	@GetMapping
 	public String home() {
-		return "home test with vultr Thanks For trying!!!!!";
+		return "home test with Hosting Thanks For visiting!!!!!";
 	}
 	
 	@GetMapping("/test")
