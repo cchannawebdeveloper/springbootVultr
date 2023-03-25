@@ -16,7 +16,7 @@ import com.spring.boot.vultr.service.BcryptToolService;
 
 @RestController
 @RequestMapping("/api/v1")
-@CrossOrigin(originPatterns = "http://143.198.172.49:8080")
+@CrossOrigin(originPatterns = "https://144.202.3.188")
 //@CrossOrigin(originPatterns = "http://localhost:8083")
 public class BcryptToolController {
 	@Autowired
